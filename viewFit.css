@@ -10,7 +10,7 @@
     background-color: yellow;
     color: #333;
     line-height: 1.6;
-    padding-top: 80px; /* Add padding to prevent content overlap with fixed header */
+    padding-top: 65px; /* Add padding to prevent content overlap with fixed header */
   }
   
   /* Header */
@@ -54,7 +54,7 @@
   /* Hero Section */
   .hero {
     position: relative; /* Set relative positioning for the container */
-    background: none; /* Remove the background image */
+    background: none; 
     text-align: center;
     padding: 0; /* Remove padding to fit the image */
   }
@@ -63,6 +63,7 @@
     width: 100%; /* Adjust the width to fit the container */
     height: 700px; /* Set a fixed height for the image */
     object-fit: cover; /* Ensure the image scales properly */
+    background-size: cover;
   }
 
   .hero-text {
@@ -80,6 +81,28 @@
     margin-bottom: 10px;
   }
   
+  .hero-welcome {
+    position: absolute; /* Position the text over the image */
+    top: 20%; /* Center vertically */
+    left: 10%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Adjust for perfect centering */
+    color: yellow;
+    text-shadow: 5px 5px 4px #000;
+  }
+
+  #msg {
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+
+  #msg2 {
+    font-size: 3.2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+
+
   /*Achievement Section*/
   .section-achieve{
   background-color: yellow;
@@ -105,15 +128,14 @@
 
   /* Achievement Cards */
   
-  .header {
+  .info {
     background-color: black;
     color: yellow;
-    border-radius: 20px;
     text-align: center;
     padding: 40px 20px;
   }
 
-  .header h1 {
+  .info h1 {
     font-size: 28px;
     margin-bottom: 30px;
   }
@@ -173,7 +195,7 @@
     font-size: 16px;
   }
 
-  /* Sections */
+  /* Sections --- Services */
   .section {
     padding: 60px 20px;
     text-align: center;
@@ -264,7 +286,8 @@
   }
   
   footer a:hover {
-    text-decoration: underline;
+    text-decoration: none;
+    color: yellow;
   }
   
   /* Responsive Adjustments */
@@ -285,7 +308,6 @@
 
   
 /* Contact page css*/
-
 .contact{
   position: relative;
   min-height: 100vh;
@@ -294,7 +316,7 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background: url(Bg\ Gym.jpg);
+  background: url(images/GymBg.jpg);
   background-size: cover;
 }
 
@@ -451,4 +473,68 @@
       width: 100%;
   }
   
+}
+
+
+/*Image slider*/
+
+.sliders{
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+}
+
+.clients h1{
+  color: black;
+  text-align: center;
+  margin: 10px;
+}
+
+.sliders div{
+  height: 550px;
+  width: 250px;
+  border-radius: 10px;
+}
+
+.sliders div:hover {
+  width: 500px;
+  transition: width 0.5s ease;
+  cursor: pointer;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+
+.div1{
+  background-image: url(images/yoga3.jpg);
+  background-position: center;
+  background-size: cover;
+  transition: width 0.5s ease;
+}
+
+.div2{
+  background-image: url(images/pic3.jpg);
+  background-position: center;
+  background-size: cover;
+  transition: width 0.5s ease;
+}
+
+.div3{
+  background-image: url(images/pic1.jpg);
+  background-position: center;
+  background-size: cover;
+  transition: width 0.5s ease;
+}
+
+.div4{
+  background-image: url(images/abs.jpg);
+  background-position: center;
+  background-size: cover;
+  transition: width 0.5s ease;
+}
+
+.div5{
+  background-image: url(images/box1.jpg);
+  background-position: center;
+  background-size: cover;
+  transition: width 0.5s ease;
 }
